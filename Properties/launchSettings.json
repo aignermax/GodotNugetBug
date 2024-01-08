@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "TestCopyLocalLockFileAssemblies": {
+      "commandName": "Project"
+    },
+    "Profil \"1\"": {
+      "commandName": "Executable"
+    }
+  }
+}

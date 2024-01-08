@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://7nxi5aytlvjo"]
+
+[ext_resource type="Script" path="res://ExternalDLLMathnetTest.cs" id="1_vceey"]
+
+[node name="Node2D" type="Node2D" node_paths=PackedStringArray("label")]
+script = ExtResource("1_vceey")
+label = NodePath("RichTextLabel")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_right = 782.0
+offset_bottom = 312.0
+text = "Hit F5 to start this scene.
+
+This Text should CHANGE then if Godot started correctly loading the Mathnet.DLL from the nuget package we included.
+
+If not, you can still read this.
+
+ -> and thus the software loads the MathNet.dll successfully. 
+then go into the .csproj file and add the line 
+<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+
+ and it should magically work -> which is a workaround but not really the solution"
